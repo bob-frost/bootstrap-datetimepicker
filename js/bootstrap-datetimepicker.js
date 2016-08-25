@@ -703,7 +703,7 @@
 					$.inArray(prevMonth.toDateString(), this.datesDisabled) !== -1) {
           clsName += ' disabled';
         }
-        html.push('<td class="day' + clsName + '">' + prevMonth.getUTCDate() + '</td>');
+        html.push('<td class="day' + clsName + '"><div class="day-inner">' + prevMonth.getUTCDate() + '</div></td>');
         if (prevMonth.getUTCDay() == this.weekEnd) {
           html.push('</tr>');
         }
